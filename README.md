@@ -5,16 +5,15 @@ A simple web service for converting PDFs that contain photos of documents into t
 
 Installation
 ============
-The service uses the node module [pdf-extract](https://www.npmjs.org/package/pdf-extract) to interface with the ocr software [Tesseract](http://en.wikipedia.org/wiki/Tesseract_%28software%29) and other pdf processing tools.  Thus it has quite a few dependencies.  Also for the express.js start up script to work you need to be running the legacy node installation.
+The service uses the node module [pdf-extract](https://www.npmjs.org/package/pdf-extract) to interface with the ocr software [Tesseract](http://en.wikipedia.org/wiki/Tesseract_%28software%29) and other pdf processing tools.  Thus it has quite a few dependencies.
 
-Under Ubuntu 14.04 the instructions are:
+Under Ubuntu 14.04 the instructions are as follows.  Note that for the express.js start up script to work you need to be running the legacy node installation so we will install that first.
 ```
 apt-get install nodejs-legacy
 apt-get install pdftk
 apt-get install poppler-utils
 apt-get install ghostscript
 apt-get install tesseract-ocr
-
 ```
 You may need to run these as root or sudo.
 Next clone this repository and cd into the dictory
@@ -26,6 +25,7 @@ One the dependencies are installed use nmp to install the required node modules.
 ```
 npm install
 ```
+I'm working on a Docker file that will allow for easy deployment of the app. 
 Running
 =======
 In the root directory of the app, type 
