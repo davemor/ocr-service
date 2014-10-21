@@ -1,7 +1,7 @@
 ocr-service
 ===========
 
-A simple web service for converting PDFs that contain photos of documents into text.  The service is built on node.js using the express.js framework.
+A simple web service for converting PDFs that contain photos of documents into text.  The service is built on node.js using the express.js framework.  Created for [Code the City 2](http://codethecity.org/).
 
 Installation
 ============
